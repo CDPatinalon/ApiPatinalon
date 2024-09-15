@@ -16,7 +16,7 @@ import jakarta.mail.MessagingException;
 public class EmailController { 
 
     @Autowired
-    EmailService emailService;
+    EmailService emailService; 
 
     @GetMapping("/enviar")
     public ModelAndView enviarCorreo(@RequestParam("id") Long id) throws MessagingException  {
