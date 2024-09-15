@@ -112,7 +112,7 @@ public class TorneoSeptiembreServiceImpl implements TorneoSeptiembreService{
     private ModelAndView sumarFalta(String equipo,long id,long categoria){
         Partido partido = partidoDao.findById(id).get();
         if(equipo!=null){
-            if(equipo.equals("local")){
+            if(equipo.equals("local")){ 
                 partido.setFaltasLocal(partido.getFaltasLocal()+1);
                 partidoDao.save(partido);
                 return getSavePartido(partido, categoria);
