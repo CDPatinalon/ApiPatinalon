@@ -13,7 +13,7 @@ import com.mario.proyect.service.EmailService;
 import jakarta.mail.MessagingException;
 
 @RestController
-public class EmailController {
+public class EmailController { 
 
     @Autowired
     EmailService emailService;
